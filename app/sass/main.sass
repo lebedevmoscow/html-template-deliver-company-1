@@ -1,4 +1,9 @@
 // GLOBAL
+*
+    box-sizing: border-box
+
+a
+    text-decoration: none
 
 body
     font-family: 'Poppins', sans-serif !important
@@ -30,11 +35,11 @@ body
 
 .wrapper
     header
-        height: 900px
         background-image: url('./../images/bg.png')
         background-position: top center
         background-repeat: no-repeat
         background-size: cover
+        padding-bottom: 140px
         .nav
             background-color: #FFCD00
             padding: 50px 0 50px 0
@@ -127,6 +132,7 @@ body
                 margin-top: 100px
                 .awesome-services__cards
                     display: flex
+                    justify-content: space-between
                     .awesome-services__card
                         margin-left: 30px
                         &:first-child
@@ -232,4 +238,224 @@ body
                                     font-size: 18px
                         
                         .awesome-services__btn
+                            padding: 30px 0 0 30px
 
+    .best-section
+        background-image: url('./../images/bg2.png')
+        background-position: top center
+        background-repeat: no-repeat
+        .container
+            .best-section__heading
+                font-size: 50px
+                color: #fff
+                font-weight: 700
+                text-align: center
+                padding-top: 150px
+            .best-section__cards
+                display: flex
+                margin-top: 300px
+                justify-content: space-between
+                align-items: center
+                .best-section__card
+                    box-shadow: -1px 6px 18px 0px rgba(0,0,0,0.75)
+                    background-color: #fff
+                        
+                    .best-section__title
+                        color: #ba0000
+                        font-size: 20px
+                        padding: 30px 0 0 30px
+                        font-weight: 600
+                    .best-section__list
+                        padding-bottom: 30px
+
+                        ul
+                            padding: 30px 0 0 30px
+                            li
+                                color: #777
+                                margin-top: 10px
+                                position: relative
+                                &:first-child
+                                    margin-top: 0
+                                &::after
+                                    content: ''
+                                    position: absolute
+                                    left: -15px
+                                    width: 0
+                                    height: 0
+                                    border-style: solid
+                                    border-width: 6px 0 6px 7px
+                                    border-color: transparent transparent transparent #ffcc00
+
+            .best-section__dropdown-and-img
+                display: flex
+                justify-content: space-between
+                align-items: start
+                margin-top: 100px
+                padding-bottom: 100px 
+                .best-section__dropdown
+                    background-color: #ba0000
+                    width: 570px
+                    padding-bottom: 35px
+                    transition: 200ms all
+                    .best-section__dropdown-title
+                        color: #fff
+                        font-size: 14px
+                        text-transform: uppercase
+                        font-weight: 700
+                        text-align: center
+                        margin-top: 15px
+
+                    .hidden-list
+                        height: 50px !important
+                        transition: 200ms all
+                        border: 2px solid #fff !important
+                        .best-section__dropdown-name
+                                background-color: transparent !important
+                        .best-section__dropdown-list
+                            display: none !important 
+                            
+                                
+                            
+
+                    .best-section__dropdown-single
+                        border: 2px solid #FFCD00
+                        color: #fff
+                        font-weight: 600
+                        width: 380px
+                        margin: 40px auto 0 auto
+                        position: relative
+                        transition: 200ms all
+                        height: 200px
+
+                        .best-section__dropdown-name
+                            background-color: #FFCD00  
+                            padding: 0
+                            padding: 15px
+                            height: 50px   
+                        .best-section__dropdown-list 
+                            transition: 200ms all
+                            padding: 0px 15px 30px 15px
+                            margin-top: 15px
+                            p
+                                transition: 200ms all
+                                padding-top: 15px
+                                opacity: 1
+                            ul
+                                transition: 200ms all
+                                padding-top: 15px
+                                padding-bottom: 15px
+                                line-height: 1.6
+                                opacity: 1
+                                li
+                                    padding-left: 20px 
+                                    &::after
+                                        content: ''
+                                        position: absolute
+                                        left: 15px
+                                        width: 0
+                                        height: 0
+                                        border-style: solid
+                                        border-width: 6px 0 6px 7px
+                                        border-color: transparent transparent transparent #ffcc00
+                                        
+
+                        &::after
+                            content: ''
+                            position: absolute
+                            height: 45px
+                            width: 50px
+                            right: 0
+                            border-left: 2px solid #fff
+                            border-bottom: 2px solid #fff
+                            top: 0
+                        &::before
+                            position: absolute
+                            content: ''
+                            width: 0
+                            height: 0
+                            left: 347px
+                            top: 17px
+                            border-style: solid
+                            border-width: 6px 4.5px 0 4.5px
+                            border-color: #ffffff transparent transparent transparent
+    
+    .info
+        background-color: #ba0000
+        .container
+            padding: 90px 0 90px 0
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .info__text
+                width: 750px
+                h1
+                    font-size: 30px
+                    color: #FFF
+                    font-weight: 700
+                p
+                    padding-top: 35px
+                    font-size: 16px
+                    font-weight: 500
+                    color: #fff
+                    line-height: 1.6
+            .info__btn
+                .btn
+                    width: 200px
+                    background-color: #a00000
+                    color: #fff
+
+    .partners-section
+        padding: 75px 0 55px 0
+        .partners-section__list
+            display: flex
+            justify-content: space-around
+            .partners-section__single
+                background-color: #f9f9f9
+                transition: 200ms all
+                border: 2px solid transparent
+                padding: 40px 10px
+                img
+                    display: block
+                    text-align: center
+                &:hover
+                    border: 2px solid #ba0000
+
+    .footer
+        .footer__content
+            display: flex
+            justify-content: space-between
+            .footer__text
+                display: flex
+                justify-content: space-between
+                .footer__row
+                    margin-left: 70px
+                    &:first-child
+                        margin-left: 0
+                    h6
+                        text-transform: uppercase
+                        color: #ba0000
+                        font-size: 20px
+                        font-weight: 600
+                    ul
+                        li
+                            font-weight: 600
+                            padding-top: 15px
+                            font-size: 14px
+                            position: relative
+                            color: #777777
+                            text-transform: uppercase
+                            &::after
+                                position: absolute
+                                content: ''
+                                top: 75%
+                                left: -20px
+                                transform: translate(0, -50%)
+                                height: 0
+                                border-style: solid
+                                border-width: 5px 0 5px 6px
+                                border-color: transparent transparent transparent #DA0000
+                            a
+                                color: #777
+                                transition: 150ms all
+                                &:hover
+                                    color: #ffcc00
