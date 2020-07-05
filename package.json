@@ -1,0 +1,25 @@
+{
+  "name": "cuda-student",
+  "version": "1.0.0",
+  "description": "Student Project as HTML template based on Flexbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LebeDEVBoris/cuda-student.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LebeDEVBoris/cuda-student/issues"
+  },
+  "homepage": "https://github.com/LebeDEVBoris/cuda-student#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0"
+  }
+}

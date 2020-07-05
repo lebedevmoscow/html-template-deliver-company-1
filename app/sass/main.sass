@@ -1,0 +1,110 @@
+body
+    font-family: 'Poppins', sans-serif !important
+
+.container 
+    width: 1170px
+    margin: 0 auto
+
+.btn
+    padding: 20px
+    background-color: #FFCD00
+    border: 2px solid transparent 
+    border-radius: 30px
+    text-transform: uppercase
+    color: #DA0000
+    font-size: 18px
+    font-weight: 600
+    outline: none
+    cursor: pointer
+    &:hover
+        background-color: transparent
+        color: #fff
+        border: 2px solid #fff
+
+.wrapper
+    header
+        height: 900px
+        background-image: url('./../images/bg.png')
+        background-position: top center
+        background-repeat: no-repeat
+        background-size: cover
+        .nav
+            background-color: #FFCD00
+            padding: 50px 0 50px 0
+            .container
+                display: flex
+                align-items: center
+                .nav__links
+                   ul
+                       display: flex
+                       li
+                            line-height: 50px
+                            margin-left: 55px
+                            &:first-child
+                                margin-left: 120px
+                            a
+                                font-size: 14px
+                                padding-bottom: 45px
+                                text-transform: uppercase
+                                color: #E10C00
+                                text-decoration: none
+                                font-weight: 600
+                                position: relative
+                                &::after
+                                    transition: 0.1s all
+                                    content: ''
+                                    width: 100%
+                                    left: 0
+                                    top: 125%
+                                    border: 3px solid red
+                                    position: absolute
+                                    opacity: 0
+                                &:hover
+                                    &::after
+                                        opacity: 1
+        
+        .container
+            .header__info
+                margin-top: 180px
+                .header__heading
+                    color: #FFF
+                    font-size: 70px
+                    font-weight: 800
+                    width: 400px
+                    display: block
+                    position: relative
+                    &:after
+                        position: absolute
+                        content: ''
+                        width: 30%
+                        border: 2px solid #FFCD00
+                        left: 0
+                        top: 130%
+                .header__description
+                    color: #FFCD00
+                    margin-top: 
+                    width: 670px
+                    margin-top: 100px
+                    font-size: 20px
+                .header__features
+                    margin-top: 40px
+                    ul
+                        display: flex
+                        align-items: center
+                        li
+                            color: #ffffff
+                            font-size: 20px
+                            text-transform: uppercase
+                            position: relative
+                            margin-right: 25px
+                        .header__features-dot
+                            color: #FFCD00
+                            font-size: 30px
+                .header__buttons
+                    margin-top: 35px
+                    .header__button
+                        margin-left: 20px
+                        &:first-child
+                            margin-left: 0
+                                
+

@@ -1,2 +1,2 @@
-# html-template-deliver-company-1
- just a html template made by myself for personal portfolio
+# start-template
+Start Template based on Gulp, browser-sync, gulp-sass and included jquery.
