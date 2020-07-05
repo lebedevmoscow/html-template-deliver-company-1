@@ -1,3 +1,5 @@
+// GLOBAL
+
 body
     font-family: 'Poppins', sans-serif !important
 
@@ -16,10 +18,15 @@ body
     font-weight: 600
     outline: none
     cursor: pointer
+    transition: 0.1s all
     &:hover
         background-color: transparent
         color: #fff
         border: 2px solid #fff
+
+
+
+// COMMON
 
 .wrapper
     header
@@ -107,4 +114,122 @@ body
                         &:first-child
                             margin-left: 0
                                 
+
+    .awesome-services
+        padding-bottom: 90px
+        .container
+            margin-top: 130px
+            .awesome-services__headline
+                h1
+                    color: #DA0000
+                    font-size: 50px
+            .awesome-services__content
+                margin-top: 100px
+                .awesome-services__cards
+                    display: flex
+                    .awesome-services__card
+                        margin-left: 30px
+                        &:first-child
+                            margin-left: 0
+                        .awesome-services__img
+                            img
+                                display: flex
+                        .awesome-services__title
+                            font-size: 20px
+                            text-transform: uppercase
+                            font-weight: 800
+                            color: #DA0000
+                            margin-top: 15px
+                        .awesome-services__desc
+                            color: #777777
+                            font-size: 16px
+                            margin-top: 10px
+                            width: 270px
+                            line-height: 1.9
+                        .awesome-services__link
+                            color: #000
+                            display: block
+                            font-size: 18px
+                            margin-top: 25px
+                            font-weight: 800
+                            position: relative
+                            &::after
+                                position: absolute
+                                content: ''
+                                top: 50%
+                                left: 110px
+                                transform: translate(0, -50%)
+                                height: 0
+                                border-style: solid
+                                border-width: 5px 0 5px 6px
+                                border-color: transparent transparent transparent #DA0000
+
+                    .awesome-services__menu
+                        background-color: #DA0000
+                        height: 340px
+                        margin-left: 30px
+                        width: 270px
+                        .awesome-services__menu-title
+                            color: #FFF
+                            font-size: 20px
+                            padding: 30px 0 0 30px
+                            position: relative
+                            &::after
+                               content: ''
+                               border: 1px solid #FFCD00
+                               position: absolute
+                               top: 150%
+                               width: 30%
+                               left: 30px
+                        .awesome-services__menu-desc
+                            margin-top: 55px
+                            color: #fff
+                            padding: 0px 0 0 30px
+                            
+                        
+                        .awesome-services__menu-select-wrapper
+                            width: 210px
+                            height: 50px
+                            margin: 0 auto
+                            margin-top: 30px
+                            position: relative
+                            &::after
+                                content: ''
+                                background-color: #FFCD00
+                                width: 50px
+                                height: 50px
+                                top: 0
+                                right: 0
+                                position: absolute
+                                pointer-events: none
+                            &::before
+                                content: ''
+                                width: 0
+                                height: 0
+                                border-style: solid
+                                border-width: 6px 4.5px 0 4.5px
+                                border-color: #DA0000 transparent transparent transparent
+                                position: absolute
+                                left: 180px
+                                top: 45%
+                                pointer-events: none
+                                z-index: 1
+                            select     
+                                display: block
+                                background-color: #B80000
+                                color: #FFF
+                                border: 0
+                                -webkit-appearance: none
+                                padding-left: 20px
+                                -moz-appearance: none
+                                text-indent: 1px
+                                text-overflow: ''
+                                height: 50px
+                                font-size: 18px
+                                width: 210px
+                                position: relative
+                                option
+                                    font-size: 18px
+                        
+                        .awesome-services__btn
 
