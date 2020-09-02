@@ -1,2 +1,2 @@
 # start-template
-Start Template based on Gulp, browser-sync, gulp-sass and included jquery.
+Очередная верстка для практики по макету, ничего необычного
